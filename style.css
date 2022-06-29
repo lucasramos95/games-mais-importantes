@@ -245,3 +245,31 @@ p {
     margin-top: 20px;
     margin-left: 325px;
 }
+
+#MGS4GOTP {
+    color: darkred;
+    margin-left: 325px;
+    margin-top: 90px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.MGS4GOTP {
+    width: 38%;
+    margin-top: 20px;
+    margin-left: 325px;
+}
+
+#RER {
+    color: darkred;
+    margin-left: 325px;
+    margin-top: 90px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.RER {
+    width: 38%;
+    margin-top: 20px;
+    margin-left: 325px;
+}
