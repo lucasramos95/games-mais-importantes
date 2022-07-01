@@ -5,6 +5,7 @@ body {
 * {
     margin: 0 auto;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nome-site {
@@ -33,6 +34,18 @@ nav {
 .nav-list li {
     font-size: 18px;
     margin-left: 1px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: aliceblue;
+    margin: 8px;
 }
 
 .nav-list li a {
@@ -272,4 +285,217 @@ p {
     width: 38%;
     margin-top: 20px;
     margin-left: 325px;
+}
+
+#SMW {
+    color: darkred;
+    margin-left: 325px;
+    margin-top: 90px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.SMW {
+    width: 38%;
+    margin-top: 20px;
+    margin-left: 325px;
+}
+
+#FF7 {
+    color: darkred;
+    margin-left: 325px;
+    margin-top: 90px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.FF7 {
+    width: 38%;
+    margin-top: 20px;
+    margin-left: 325px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer {
+    background-color: black;
+    padding: 70px;
+    margin-top: 175px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: aliceblue;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: background .6s;
+}
+
+.footer-col ul li a:hover {
+    background-color: blue;
+}
+
+.fa-facebook-f {
+    padding: 11px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    background-color: rgb(13, 84, 183);
+    border-radius: 20%;
+    text-align: center;
+}
+
+.fa-twitter {
+    padding: 11px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    background-color: rgba(53, 171, 245, 0.964);
+    border-radius: 20%;
+    text-align: center;
+}
+
+.fa-instagram {
+    padding: 11px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    background-color: rgba(245, 53, 171, 0.964);
+    border-radius: 20%;
+    text-align: center;
+}
+
+.fa-youtube {
+    padding: 11px;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: aliceblue;
+    background-color: rgba(245, 53, 53, 0.964);
+    border-radius: 20%;
+    text-align: center;
+}
+
+/*responsividade*/
+@media(max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+       position: absolute; /*movimentar navegação onde quiser*/
+       top: 8vh;
+       right: 0;
+       width: 50vw;
+       height: 92vh;
+       background-color: black;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nome-site, h1, h2 {
+        margin-left: 16px;
+        width: 90%;
+    }
+    .autor {
+        margin-left: 16px;
+        width: 15%;
+    }
+    h3 {
+        margin-left: 85px;
+        font-size: 18px;
+    }
+    #wallpaper {
+        margin-left: 16px;
+        width: 92%;
+    }
+    #THPS2,.THPS2, #GH3LOR, .GH3LOR, #MVSC2, .MVSC2, #CB2, .CB2, #AC2, .AC2, #BAC, .BAC, #GOW4, .GOW4, #POPSOT, .POPSOT, #PORTAL2, .PORTAL2,
+    #CSOFTN, .CSOFTN, #TW3WH, .TW3WH, #MGS4GOTP, .MGS4GOTP, #RER, .RER, #SMW, .SMW, #FF7, .FF7 {
+        margin-left: 16px;
+        width: 92%;
+        line-height: 38px;
+    }
+}
+
+@media(max-width: 574px) {
+    p {
+        margin-left: 16px;
+        width: 92%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
 }
