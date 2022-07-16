@@ -429,6 +429,7 @@ ul {
        justify-content: space-around;
        transform: translateX(100%);
        transition: transform 0.3s ease-in;
+       overflow: hidden;
     }
     .nav-list li {
         margin-left: 0;
@@ -460,11 +461,11 @@ ul {
         width: 90%;
     }
     .autor {
-        margin-left: 16px;
+        margin-left: 15px;
         width: 15%;
     }
     h3 {
-        margin-left: 85px;
+        margin-left: 89px;
         font-size: 18px;
     }
     #wallpaper {
