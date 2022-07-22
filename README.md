@@ -10,7 +10,7 @@
 
 ![04](https://user-images.githubusercontent.com/108039029/179609450-a2c34a9d-640a-4e11-9a11-1ea5160a5e9f.jpg)
 
-<h2>Tecnologias usadas no Projeto:</h2>
+<h2>Tecnologias/Linguagens usadas no Projeto:</h2>
 
 ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)
 ![CSS](https://img.shields.io/badge/-CSS-333333?style=flat&logo=CSS3&logoColor=1572B6)
